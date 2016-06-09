@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <title>javascript</title>
+    
+</head>
+ 
+<body>
+   <form>
+   	<input type="text" name="nombre" placeholder="nombre" id="uno">
+   	<input type="text" name="apellido" placeholder="apellido" id="dos">
+   	<input type="text" name="edad" placeholder="edad" id="tres">
+   	<button type="button" onclick="save()">Enviar</button>
+   </form>
+   <div id="resultado"></div>
+</body>
+<script type="text/javascript">
+	function save(){
+		var a = document.getElementById('uno').value;
+		document.getElementById("resultado").innerHTML=a;
+		var b = document.getElementById("dos").value;
+		document.getElementById("resultado").innerHTML=b;
+		var c = document.getElementById('tres').value;
+		document.getElementById("resultado").innerHTML=c;
+
+		document.getElementById("resultado").innerHTML=
+		"<br>"+a+"<br>"+b+"<br>"+c;
+	}
+</script>
+</html>
